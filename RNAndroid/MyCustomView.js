@@ -7,7 +7,7 @@ class MyCustomView extends React.Component {
         this._onChange = this._onChange.bind(this);
     }
 
-    _onChange(event: Event) {
+    _onChange(event) {
 
         if(!this.props.onChangeMessage) {
             return;

@@ -2,22 +2,21 @@ import React from 'react';
 import {
   AppRegistry,
   Button,
-  Style,
   Text,
   NativeModules,
   NativeEventEmitter,
   View
 } from 'react-native';
 
-import ButtonExample from './src/button_example';
 import NativeInterfaceScreen from './src/native_interface';
 
-import ReactNativeBlobUtil from 'react-native-blob-util';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useNavigation } from '@react-navigation/native';
 import ExpressScreen from './src/express_example';
 import ExpressLayoutScreen from './src/express_layout';
+import HookExampleScreen from './src/hook_example';
+import ComponentExample from './src/component_example';
 
 //import ToastExample from './ToastExample';
 
@@ -36,7 +35,7 @@ function HomeScreen() {
         () => {
           navigation.navigate('TestScreen')
         }} />
-      
+
       <Button title="Express" onPress={
         () => {
           navigation.navigate('ExpressScreen')
@@ -45,10 +44,16 @@ function HomeScreen() {
         () => {
           navigation.navigate('ExpressLayoutScreen')
         }} />
-      
-      <Button title='ButtonExample' onPress={() => {
+
+      <Button title='核心组件' onPress={() => {
         navigation.navigate('ButtonExample')
       }} />
+
+      <Button title='Hook Example' onPress={() => {
+        navigation.navigate('HookExample')
+      }} />
+
+
     </View>
   );
 }
@@ -67,7 +72,9 @@ class HelloWorld extends React.Component {
           <Stack.Screen name="TestScreen" component={NativeInterfaceScreen} />
           <Stack.Screen name="ExpressScreen" component={ExpressScreen} />
           <Stack.Screen name="ExpressLayoutScreen" component={ExpressLayoutScreen} />
-          <Stack.Screen name='ButtonExample' component={ButtonExample} />
+          <Stack.Screen name='ButtonExample' component={ComponentExample} />
+          <Stack.Screen name='HookExample' component={HookExampleScreen} />
+
         </Stack.Navigator>
       </NavigationContainer>
     );

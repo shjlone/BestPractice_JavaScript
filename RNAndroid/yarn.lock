@@ -3456,6 +3456,11 @@
     "shell-quote" "^1.6.1"
     "ws" "^7"
 
+"react-freeze@^1.0.0":
+  "integrity" "sha512-ZnXwLQnGzrDpHBHiC56TXFXvmolPeMjTn1UOm610M4EXGzbEDR7oOIyS2ZiItgbs6eZc4oU/a0hpk8PrcKvv5g=="
+  "resolved" "http://10.193.207.220:8081/repository/xdragon-group/react-freeze/-/react-freeze-1.0.3.tgz"
+  "version" "1.0.3"
+
 "react-is@^16.13.0", "react-is@^16.13.1":
   "integrity" "sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ="
   "resolved" "http://10.193.207.220:8081/repository/xdragon-group/react-is/-/react-is-16.13.1.tgz"
@@ -3482,6 +3487,19 @@
     "flow-parser" "^0.121.0"
     "jscodeshift" "^0.11.0"
     "nullthrows" "^1.1.1"
+
+"react-native-safe-area-context@^4.7.2", "react-native-safe-area-context@>= 3.0.0":
+  "integrity" "sha512-5fy/hRNJ7bI/U2SliOeKf0D80J4lXPc1NsRiNS7Xaz8YTnqlzWib1ViItkwKPfufe54YKzVBMmM32RpdzvO2gg=="
+  "resolved" "http://10.193.207.220:8081/repository/xdragon-group/react-native-safe-area-context/-/react-native-safe-area-context-4.7.2.tgz"
+  "version" "4.7.2"
+
+"react-native-screens@^3.25.0", "react-native-screens@>= 3.0.0":
+  "integrity" "sha512-TSC2Ad0hh763I8QT6XxMsPXAagQ+RawDSdFtKRvIz9fCYr96AjRwwaqmYivbqlDywOgcRBkIVynkFtp0ThmlYw=="
+  "resolved" "http://10.193.207.220:8081/repository/xdragon-group/react-native-screens/-/react-native-screens-3.25.0.tgz"
+  "version" "3.25.0"
+  dependencies:
+    "react-freeze" "^1.0.0"
+    "warn-once" "^0.1.0"
 
 "react-native@*", "react-native@^0.66.5":
   "integrity" "sha512-dC5xmE1anT+m8eGU0N/gv2XUWZygii6TTqbwZPsN+uMhVvjxt4FsTqpZOFFvA5sxLPR/NDEz8uybTvItNBMClw=="
@@ -3525,7 +3543,7 @@
   "resolved" "http://10.193.207.220:8081/repository/xdragon-group/react-refresh/-/react-refresh-0.4.3.tgz"
   "version" "0.4.3"
 
-"react@*", "react@^16.11.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@>=16.8", "react@17.0.2":
+"react@*", "react@^16.11.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@>=16.8", "react@>=17.0.0", "react@17.0.2":
   "integrity" "sha1-0pRUX+YimczugzY1mb+QTkoH/bs="
   "resolved" "http://10.193.207.220:8081/repository/xdragon-group/react/-/react-16.11.0.tgz"
   "version" "16.11.0"

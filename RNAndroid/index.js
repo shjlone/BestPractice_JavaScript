@@ -17,6 +17,7 @@ import ExpressScreen from './src/express_example';
 import ExpressLayoutScreen from './src/express_layout';
 import HookExampleScreen from './src/hooks_example/hook_example';
 import ComponentExample from './src/redux_example/component_example';
+import PermissionExampleScreen from './src/permissions_example';
 // import ReduxExampleScreen from './src/redux_example/redux_example_index';
 
 //import ToastExample from './ToastExample';
@@ -53,10 +54,12 @@ function HomeScreen() {
       <Button title='Hook Example' onPress={() => {
         navigation.navigate('HookExample')
       }} />
-      <Button title='Redux Example' onPress={ () => {
+      {/* <Button title='Redux Example' onPress={ () => {
         navigation.navigate('ReduxExample')
+      }} /> */}
+      <Button title="权限测试" onPress={() => {
+        navigation.navigate('PermissionsExample')
       }} />
-
 
     </View>
   );
@@ -78,6 +81,7 @@ class HelloWorld extends React.Component {
           <Stack.Screen name="ExpressLayoutScreen" component={ExpressLayoutScreen} />
           <Stack.Screen name='ButtonExample' component={ComponentExample} />
           <Stack.Screen name='HookExample' component={HookExampleScreen} />
+          <Stack.Screen name='PermissionsExample' component={PermissionExampleScreen} />
           {/* <Stack.Screen name='ReduxExample' component={ReduxExampleScreen} /> */}
 
         </Stack.Navigator>
